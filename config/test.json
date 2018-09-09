@@ -1,5 +1,5 @@
  {
- 	"DBHost": "localhost",
+ 	"DBHost": "mongodb://localhost",
  	"Database": "test",
  	"Table": "test"
  }
