@@ -1,0 +1,5 @@
+ {
+ 	"DBHost": "localhost",
+ 	"Database": "test",
+ 	"Table": "test"
+ }

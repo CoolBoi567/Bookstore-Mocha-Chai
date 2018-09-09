@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "9d4e80e5-da3d-4594-86b0-576e966ddc94",
+		"name": "Bookstore API Test using Mocha and Chai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get to Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				},
+				"description": "Welcome to Bookstore"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /book/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/book/5b90dbb9b91282207e8be222",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"5b90dbb9b91282207e8be222"
+					]
+				},
+				"description": "GET to /book with unique id to fetch details"
+			},
+			"response": []
+		},
+		{
+			"name": "POST to add new Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "The Notebook",
+							"sessionValue": "The ",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Nicolas Sparks",
+							"sessionValue": "J.R.R.",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "1911",
+							"sessionValue": "1954",
+							"type": "text"
+						},
+						{
+							"key": "pages",
+							"value": "255",
+							"sessionValue": "1170",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"sessionValue": null,
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				},
+				"description": "PUT in /book with json form datas"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "5b8e6e5771485035676a90e1",
+							"sessionValue": "5b8e6e5771485035676a90e1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/book/5b8e6e5771485035676a90e1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"5b8e6e5771485035676a90e1"
+					]
+				},
+				"description": "DELETE a book with unique id"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				},
+				"description": "Fetting all Books"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT to update book with id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "year",
+							"value": "1895",
+							"sessionValue": "1895",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "The Time Machine",
+							"sessionValue": "The Time Machine",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/book/5b8e6d7f71485035676a90e0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"5b8e6d7f71485035676a90e0"
+					]
+				},
+				"description": "/book/:id to update specific book"
+			},
+			"response": []
+		}
+	]
+}

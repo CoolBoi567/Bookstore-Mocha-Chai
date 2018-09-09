@@ -1,0 +1,32 @@
+{
+  "name": "bookstore-mocha",
+  "version": "1.0.0",
+  "description": "RESTful using NodeJS, tests using Mocha and Chai",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "config": "^1.20.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "start": "export NODE_ENV='test' && node server.js",
+    "test": "mocha --timeout 10000"
+  },
+  "keywords": [
+    "Mocha",
+    "Chai",
+    "Testing",
+    "NodeJS",
+    "REST",
+    "RESTful"
+  ],
+  "author": "Prashant",
+  "license": "ISC"
+}
